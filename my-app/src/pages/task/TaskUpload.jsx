@@ -36,7 +36,7 @@ const TaskUpload = () => {
         }
     }
     return (
-        <div className=' w-[50%] mx-auto my-36  ' >
+        <div className=' w-[50%] mx-auto my-36' >
             <h1 className='lg:text-4xl font-semibold text-center lg:mb-4 ' >Task Upload From</h1>
             <form onSubmit={handleSubmit} >
                 <div>

@@ -53,6 +53,19 @@ const Navbar = () => {
                                     </Link>
                                 }
                             </li>
+                            <li>
+                                {
+                                    token && <Link
+                                        className={`px-3 py-2 rounded-lg  ${pathname === "/task-by-user"
+                                            ? "font-bold underline bg-red-600"
+                                            : ""
+                                            }`}
+                                        href="/task-by-user"
+                                    >
+                                        Task By User
+                                    </Link>
+                                }
+                            </li>
                         </ul>
                     </nav>
                 </div>
