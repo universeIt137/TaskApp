@@ -28,10 +28,10 @@ const Navbar = () => {
                 {/* Menu */}
                 <div>
                     <nav>
-                        <ul className="flex text-white font-semibold">
+                        <ul className="flex text-white font-semibold gap-3 ">
                             <li>
                                 <Link
-                                    className={`px-3 py-2 rounded-lg shadow-lg ${pathname === "/"
+                                    className={`px-3 py-2 rounded-lg  ${pathname === "/"
                                         ? "font-bold underline bg-red-600"
                                         : ""
                                         }`}
@@ -39,6 +39,19 @@ const Navbar = () => {
                                 >
                                     Home
                                 </Link>
+                            </li>
+                            <li>
+                                {
+                                    token && <Link
+                                        className={`px-3 py-2 rounded-lg  ${pathname === "/add-task"
+                                            ? "font-bold underline bg-red-600"
+                                            : ""
+                                            }`}
+                                        href="/add-task"
+                                    >
+                                        Add Task
+                                    </Link>
+                                }
                             </li>
                         </ul>
                     </nav>
